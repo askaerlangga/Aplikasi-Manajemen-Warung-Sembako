@@ -30,8 +30,8 @@ Partial Class Login
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -123,6 +123,16 @@ Partial Class Login
         Me.Panel1.Size = New System.Drawing.Size(309, 130)
         Me.Panel1.TabIndex = 8
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(56, 74)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(201, 16)
+        Me.Label6.TabIndex = 1
+        Me.Label6.Text = "Silahkan login untuk melanjutkan"
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -134,22 +144,12 @@ Partial Class Login
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Login"
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(56, 74)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(201, 16)
-        Me.Label6.TabIndex = 1
-        Me.Label6.Text = "Silahkan login untuk melanjutkan"
-        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(309, 412)
+        Me.ClientSize = New System.Drawing.Size(309, 411)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
