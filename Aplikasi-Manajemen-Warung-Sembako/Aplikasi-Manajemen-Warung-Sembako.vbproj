@@ -75,10 +75,28 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BukuHutang.Designer.vb">
+      <DependentUpon>BukuHutang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BukuHutang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gudang.Designer.vb">
+      <DependentUpon>Gudang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gudang.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="HalamanUtama.Designer.vb">
       <DependentUpon>HalamanUtama.vb</DependentUpon>
     </Compile>
     <Compile Include="HalamanUtama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan.Designer.vb">
+      <DependentUpon>Laporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.vb">
@@ -103,10 +121,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Pengaturan.Designer.vb">
+      <DependentUpon>Pengaturan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pengaturan.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="BukuHutang.resx">
+      <DependentUpon>BukuHutang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gudang.resx">
+      <DependentUpon>Gudang.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HalamanUtama.resx">
       <DependentUpon>HalamanUtama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan.resx">
+      <DependentUpon>Laporan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -116,6 +149,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pengaturan.resx">
+      <DependentUpon>Pengaturan.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -129,6 +165,25 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxCrystal">
+      <Guid>{00025600-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Crystal">
+      <Guid>{00025600-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
