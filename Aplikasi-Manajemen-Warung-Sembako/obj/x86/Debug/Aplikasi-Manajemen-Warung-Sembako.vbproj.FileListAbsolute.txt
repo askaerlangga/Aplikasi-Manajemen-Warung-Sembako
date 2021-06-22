@@ -56,3 +56,12 @@ C:\Users\XcyberMrx08\Desktop\Aplikasi-Manajemen-Warung-Sembako-main\Aplikasi-Man
 C:\Users\XcyberMrx08\Desktop\Aplikasi-Manajemen-Warung-Sembako-main\Aplikasi-Manajemen-Warung-Sembako\obj\x86\Debug\Aplikasi_Manajemen_Warung_Sembako.Gudang.resources
 C:\Users\XcyberMrx08\Desktop\Aplikasi-Manajemen-Warung-Sembako-main\Aplikasi-Manajemen-Warung-Sembako\obj\x86\Debug\Aplikasi_Manajemen_Warung_Sembako.BukuHutang.resources
 C:\Users\XcyberMrx08\Desktop\Aplikasi-Manajemen-Warung-Sembako-main\Aplikasi-Manajemen-Warung-Sembako\obj\x86\Debug\Aplikasi_Manajemen_Warung_Sembako.Pengaturan.resources
+C:\Users\Aska Erlangga\Source\Repos\askaerlangga\Aplikasi-Manajemen-Warung-Sembako\Aplikasi-Manajemen-Warung-Sembako\obj\x86\Debug\Aplikasi-Manajemen-Warung-Sembako.vbproj.ResolveComReference.cache
+C:\Users\Aska Erlangga\Source\Repos\askaerlangga\Aplikasi-Manajemen-Warung-Sembako\Aplikasi-Manajemen-Warung-Sembako\obj\x86\Debug\Aplikasi_Manajemen_Warung_Sembako.BukuHutang.resources
+C:\Users\Aska Erlangga\Source\Repos\askaerlangga\Aplikasi-Manajemen-Warung-Sembako\Aplikasi-Manajemen-Warung-Sembako\obj\x86\Debug\Aplikasi_Manajemen_Warung_Sembako.Gudang.resources
+C:\Users\Aska Erlangga\Source\Repos\askaerlangga\Aplikasi-Manajemen-Warung-Sembako\Aplikasi-Manajemen-Warung-Sembako\obj\x86\Debug\Aplikasi_Manajemen_Warung_Sembako.Laporan.resources
+C:\Users\Aska Erlangga\Source\Repos\askaerlangga\Aplikasi-Manajemen-Warung-Sembako\Aplikasi-Manajemen-Warung-Sembako\obj\x86\Debug\Aplikasi_Manajemen_Warung_Sembako.Pengaturan.resources
+C:\Users\Aska Erlangga\Source\Repos\askaerlangga\Aplikasi-Manajemen-Warung-Sembako\Aplikasi-Manajemen-Warung-Sembako\bin\Debug\Interop.Crystal.dll
+C:\Users\Aska Erlangga\Source\Repos\askaerlangga\Aplikasi-Manajemen-Warung-Sembako\Aplikasi-Manajemen-Warung-Sembako\bin\Debug\AxInterop.Crystal.dll
+C:\Users\Aska Erlangga\Source\Repos\askaerlangga\Aplikasi-Manajemen-Warung-Sembako\Aplikasi-Manajemen-Warung-Sembako\obj\x86\Debug\Interop.Crystal.dll
+C:\Users\Aska Erlangga\Source\Repos\askaerlangga\Aplikasi-Manajemen-Warung-Sembako\Aplikasi-Manajemen-Warung-Sembako\obj\x86\Debug\AxInterop.Crystal.dll
