@@ -31,12 +31,13 @@ Partial Class Gudang
         Me.txnamabarang = New System.Windows.Forms.TextBox()
         Me.txharga = New System.Windows.Forms.TextBox()
         Me.txjumlah = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.lvgudang = New System.Windows.Forms.ListView()
+        Me.btnsimpan = New System.Windows.Forms.Button()
+        Me.btnedit = New System.Windows.Forms.Button()
+        Me.btnhapus = New System.Windows.Forms.Button()
+        Me.btnbersih = New System.Windows.Forms.Button()
         Me.cmbsatuan = New System.Windows.Forms.ComboBox()
+        Me.dgvgudang = New System.Windows.Forms.DataGridView()
+        CType(Me.dgvgudang, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -132,70 +133,61 @@ Partial Class Gudang
         Me.txjumlah.Size = New System.Drawing.Size(247, 23)
         Me.txjumlah.TabIndex = 8
         '
-        'Button1
+        'btnsimpan
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(442, 49)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(113, 46)
-        Me.Button1.TabIndex = 10
-        Me.Button1.Text = "Simpan"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnsimpan.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.btnsimpan.FlatAppearance.BorderSize = 0
+        Me.btnsimpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnsimpan.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnsimpan.ForeColor = System.Drawing.Color.White
+        Me.btnsimpan.Location = New System.Drawing.Point(442, 49)
+        Me.btnsimpan.Name = "btnsimpan"
+        Me.btnsimpan.Size = New System.Drawing.Size(113, 46)
+        Me.btnsimpan.TabIndex = 10
+        Me.btnsimpan.Text = "Simpan"
+        Me.btnsimpan.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnedit
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(442, 102)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(113, 46)
-        Me.Button2.TabIndex = 11
-        Me.Button2.Text = "Edit"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnedit.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.btnedit.FlatAppearance.BorderSize = 0
+        Me.btnedit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnedit.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnedit.ForeColor = System.Drawing.Color.White
+        Me.btnedit.Location = New System.Drawing.Point(442, 102)
+        Me.btnedit.Name = "btnedit"
+        Me.btnedit.Size = New System.Drawing.Size(113, 46)
+        Me.btnedit.TabIndex = 11
+        Me.btnedit.Text = "Edit"
+        Me.btnedit.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnhapus
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(589, 49)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(113, 46)
-        Me.Button3.TabIndex = 12
-        Me.Button3.Text = "Hapus"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnhapus.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.btnhapus.FlatAppearance.BorderSize = 0
+        Me.btnhapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnhapus.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnhapus.ForeColor = System.Drawing.Color.White
+        Me.btnhapus.Location = New System.Drawing.Point(589, 49)
+        Me.btnhapus.Name = "btnhapus"
+        Me.btnhapus.Size = New System.Drawing.Size(113, 46)
+        Me.btnhapus.TabIndex = 12
+        Me.btnhapus.Text = "Hapus"
+        Me.btnhapus.UseVisualStyleBackColor = False
         '
-        'Button4
+        'btnbersih
         '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Location = New System.Drawing.Point(589, 101)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(113, 46)
-        Me.Button4.TabIndex = 13
-        Me.Button4.Text = "Bersih"
-        Me.Button4.UseVisualStyleBackColor = False
-        '
-        'lvgudang
-        '
-        Me.lvgudang.HideSelection = False
-        Me.lvgudang.Location = New System.Drawing.Point(45, 178)
-        Me.lvgudang.Name = "lvgudang"
-        Me.lvgudang.Size = New System.Drawing.Size(656, 249)
-        Me.lvgudang.TabIndex = 14
-        Me.lvgudang.UseCompatibleStateImageBehavior = False
+        Me.btnbersih.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.btnbersih.FlatAppearance.BorderSize = 0
+        Me.btnbersih.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnbersih.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnbersih.ForeColor = System.Drawing.Color.White
+        Me.btnbersih.Location = New System.Drawing.Point(589, 101)
+        Me.btnbersih.Name = "btnbersih"
+        Me.btnbersih.Size = New System.Drawing.Size(113, 46)
+        Me.btnbersih.TabIndex = 13
+        Me.btnbersih.Text = "Bersih"
+        Me.btnbersih.UseVisualStyleBackColor = False
         '
         'cmbsatuan
         '
@@ -208,18 +200,26 @@ Partial Class Gudang
         Me.cmbsatuan.Size = New System.Drawing.Size(247, 23)
         Me.cmbsatuan.TabIndex = 15
         '
+        'dgvgudang
+        '
+        Me.dgvgudang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvgudang.Location = New System.Drawing.Point(45, 179)
+        Me.dgvgudang.Name = "dgvgudang"
+        Me.dgvgudang.Size = New System.Drawing.Size(657, 231)
+        Me.dgvgudang.TabIndex = 16
+        '
         'Gudang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(739, 443)
+        Me.Controls.Add(Me.dgvgudang)
         Me.Controls.Add(Me.cmbsatuan)
-        Me.Controls.Add(Me.lvgudang)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnbersih)
+        Me.Controls.Add(Me.btnhapus)
+        Me.Controls.Add(Me.btnedit)
+        Me.Controls.Add(Me.btnsimpan)
         Me.Controls.Add(Me.txjumlah)
         Me.Controls.Add(Me.txharga)
         Me.Controls.Add(Me.txnamabarang)
@@ -231,6 +231,7 @@ Partial Class Gudang
         Me.Controls.Add(Me.Label1)
         Me.Name = "Gudang"
         Me.Text = "Gudang"
+        CType(Me.dgvgudang, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -245,10 +246,10 @@ Partial Class Gudang
     Friend WithEvents txnamabarang As TextBox
     Friend WithEvents txharga As TextBox
     Friend WithEvents txjumlah As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents lvgudang As ListView
+    Friend WithEvents btnsimpan As Button
+    Friend WithEvents btnedit As Button
+    Friend WithEvents btnhapus As Button
+    Friend WithEvents btnbersih As Button
     Friend WithEvents cmbsatuan As ComboBox
+    Friend WithEvents dgvgudang As DataGridView
 End Class
