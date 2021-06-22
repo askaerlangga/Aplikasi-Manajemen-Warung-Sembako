@@ -27,16 +27,16 @@ Partial Class Gudang
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txnobarang = New System.Windows.Forms.TextBox()
+        Me.txnamabarang = New System.Windows.Forms.TextBox()
+        Me.txharga = New System.Windows.Forms.TextBox()
+        Me.txjumlah = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.lvgudang = New System.Windows.Forms.ListView()
+        Me.cmbsatuan = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -84,65 +84,53 @@ Partial Class Gudang
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Satuan"
         '
-        'TextBox1
+        'txnobarang
         '
-        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.ForeColor = System.Drawing.Color.White
-        Me.TextBox1.Location = New System.Drawing.Point(151, 33)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(247, 23)
-        Me.TextBox1.TabIndex = 5
+        Me.txnobarang.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.txnobarang.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txnobarang.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txnobarang.ForeColor = System.Drawing.Color.White
+        Me.txnobarang.Location = New System.Drawing.Point(151, 33)
+        Me.txnobarang.Multiline = True
+        Me.txnobarang.Name = "txnobarang"
+        Me.txnobarang.Size = New System.Drawing.Size(247, 23)
+        Me.txnobarang.TabIndex = 5
         '
-        'TextBox2
+        'txnamabarang
         '
-        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.ForeColor = System.Drawing.Color.White
-        Me.TextBox2.Location = New System.Drawing.Point(151, 59)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(247, 23)
-        Me.TextBox2.TabIndex = 6
+        Me.txnamabarang.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.txnamabarang.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txnamabarang.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txnamabarang.ForeColor = System.Drawing.Color.White
+        Me.txnamabarang.Location = New System.Drawing.Point(151, 59)
+        Me.txnamabarang.Multiline = True
+        Me.txnamabarang.Name = "txnamabarang"
+        Me.txnamabarang.Size = New System.Drawing.Size(247, 23)
+        Me.txnamabarang.TabIndex = 6
         '
-        'TextBox3
+        'txharga
         '
-        Me.TextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.ForeColor = System.Drawing.Color.White
-        Me.TextBox3.Location = New System.Drawing.Point(151, 86)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(247, 23)
-        Me.TextBox3.TabIndex = 7
+        Me.txharga.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.txharga.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txharga.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txharga.ForeColor = System.Drawing.Color.White
+        Me.txharga.Location = New System.Drawing.Point(151, 86)
+        Me.txharga.Multiline = True
+        Me.txharga.Name = "txharga"
+        Me.txharga.Size = New System.Drawing.Size(247, 23)
+        Me.txharga.TabIndex = 7
         '
-        'TextBox4
+        'txjumlah
         '
-        Me.TextBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.ForeColor = System.Drawing.Color.White
-        Me.TextBox4.Location = New System.Drawing.Point(151, 112)
-        Me.TextBox4.Multiline = True
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(247, 23)
-        Me.TextBox4.TabIndex = 8
-        '
-        'TextBox5
-        '
-        Me.TextBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.ForeColor = System.Drawing.Color.White
-        Me.TextBox5.Location = New System.Drawing.Point(151, 139)
-        Me.TextBox5.Multiline = True
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(247, 23)
-        Me.TextBox5.TabIndex = 9
+        Me.txjumlah.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.txjumlah.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txjumlah.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txjumlah.ForeColor = System.Drawing.Color.White
+        Me.txjumlah.Location = New System.Drawing.Point(151, 112)
+        Me.txjumlah.Multiline = True
+        Me.txjumlah.Name = "txjumlah"
+        Me.txjumlah.Size = New System.Drawing.Size(247, 23)
+        Me.txjumlah.TabIndex = 8
         '
         'Button1
         '
@@ -200,14 +188,25 @@ Partial Class Gudang
         Me.Button4.Text = "Bersih"
         Me.Button4.UseVisualStyleBackColor = False
         '
-        'ListView1
+        'lvgudang
         '
-        Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(45, 178)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(656, 249)
-        Me.ListView1.TabIndex = 14
-        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.lvgudang.HideSelection = False
+        Me.lvgudang.Location = New System.Drawing.Point(45, 178)
+        Me.lvgudang.Name = "lvgudang"
+        Me.lvgudang.Size = New System.Drawing.Size(656, 249)
+        Me.lvgudang.TabIndex = 14
+        Me.lvgudang.UseCompatibleStateImageBehavior = False
+        '
+        'cmbsatuan
+        '
+        Me.cmbsatuan.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.cmbsatuan.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbsatuan.ForeColor = System.Drawing.Color.White
+        Me.cmbsatuan.FormattingEnabled = True
+        Me.cmbsatuan.Location = New System.Drawing.Point(151, 141)
+        Me.cmbsatuan.Name = "cmbsatuan"
+        Me.cmbsatuan.Size = New System.Drawing.Size(247, 23)
+        Me.cmbsatuan.TabIndex = 15
         '
         'Gudang
         '
@@ -215,16 +214,16 @@ Partial Class Gudang
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(739, 443)
-        Me.Controls.Add(Me.ListView1)
+        Me.Controls.Add(Me.cmbsatuan)
+        Me.Controls.Add(Me.lvgudang)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txjumlah)
+        Me.Controls.Add(Me.txharga)
+        Me.Controls.Add(Me.txnamabarang)
+        Me.Controls.Add(Me.txnobarang)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -242,14 +241,14 @@ Partial Class Gudang
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents txnobarang As TextBox
+    Friend WithEvents txnamabarang As TextBox
+    Friend WithEvents txharga As TextBox
+    Friend WithEvents txjumlah As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents ListView1 As ListView
+    Friend WithEvents lvgudang As ListView
+    Friend WithEvents cmbsatuan As ComboBox
 End Class
