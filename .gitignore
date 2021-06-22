@@ -30,7 +30,8 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
-obj/x86/Debug/Aplikasi-Manajemen-Warung-Sembako.vbproj.GenerateResource.cache
+obj/x86/Debug/
+bin/Debug/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
