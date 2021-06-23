@@ -93,6 +93,12 @@
     <Compile Include="HalamanUtama.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Kasir.Designer.vb">
+      <DependentUpon>Kasir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kasir.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Laporan.Designer.vb">
       <DependentUpon>Laporan.vb</DependentUpon>
     </Compile>
@@ -138,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HalamanUtama.resx">
       <DependentUpon>HalamanUtama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasir.resx">
+      <DependentUpon>Kasir.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Laporan.resx">
       <DependentUpon>Laporan.vb</DependentUpon>

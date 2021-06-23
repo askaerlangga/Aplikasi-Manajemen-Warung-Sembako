@@ -5,6 +5,13 @@
 
     Private Sub btnkasir_Click(sender As Object, e As EventArgs) Handles btnkasir.Click
         tittletext.Text = btnkasir.Text
+        Me.PanelUtama.Controls.Clear()
+        Kasir.TopLevel = False
+        Kasir.AutoSize = False
+        Kasir.FormBorderStyle = FormBorderStyle.None
+        Kasir.Dock = DockStyle.Fill
+        Me.PanelUtama.Controls.Add(Kasir)
+        Kasir.Show()
     End Sub
 
     Private Sub btnbukuutang_Click(sender As Object, e As EventArgs) Handles btnbukuutang.Click
