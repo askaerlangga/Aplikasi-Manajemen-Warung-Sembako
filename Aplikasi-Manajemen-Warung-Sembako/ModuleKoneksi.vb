@@ -19,7 +19,7 @@ Module ModuleKoneksi
         If conn.State = ConnectionState.Closed Then
             conn.Open()
         Else
-
+            MessageBox.Show("Database tidak terhubung!")
         End If
     End Sub
 
