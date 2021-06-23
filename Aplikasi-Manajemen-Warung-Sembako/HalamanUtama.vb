@@ -80,4 +80,10 @@
     Private Sub tittletext_Click(sender As Object, e As EventArgs) Handles tittletext.Click
         btndashboard.Show()
     End Sub
+
+    Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
+        Me.Close()
+        Login.Show()
+        Login.resetFormLogin()
+    End Sub
 End Class

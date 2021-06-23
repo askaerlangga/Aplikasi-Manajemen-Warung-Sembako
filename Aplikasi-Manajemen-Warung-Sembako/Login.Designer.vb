@@ -73,6 +73,7 @@ Partial Class Login
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(271, 22)
         Me.txtUsername.TabIndex = 3
+        Me.txtUsername.Tag = ""
         Me.txtUsername.Text = "Masukan Username"
         '
         'txtPassword
@@ -85,6 +86,7 @@ Partial Class Login
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(271, 22)
         Me.txtPassword.TabIndex = 5
+        Me.txtPassword.Tag = ""
         Me.txtPassword.Text = "Masukan Password"
         '
         'Label3

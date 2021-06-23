@@ -32,6 +32,7 @@ Partial Class HalamanUtama
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.tittletext = New FontAwesome.Sharp.IconButton()
         Me.PanelUtama = New System.Windows.Forms.Panel()
+        Me.btnLogout = New FontAwesome.Sharp.IconButton()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -39,6 +40,7 @@ Partial Class HalamanUtama
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.btnLogout)
         Me.Panel1.Controls.Add(Me.btnpengaturan)
         Me.Panel1.Controls.Add(Me.btngudang)
         Me.Panel1.Controls.Add(Me.btnlaporan)
@@ -202,6 +204,25 @@ Partial Class HalamanUtama
         Me.PanelUtama.Size = New System.Drawing.Size(861, 535)
         Me.PanelUtama.TabIndex = 2
         '
+        'btnLogout
+        '
+        Me.btnLogout.FlatAppearance.BorderSize = 0
+        Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLogout.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogout.ForeColor = System.Drawing.Color.White
+        Me.btnLogout.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt
+        Me.btnLogout.IconColor = System.Drawing.Color.White
+        Me.btnLogout.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnLogout.IconSize = 40
+        Me.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnLogout.Location = New System.Drawing.Point(3, 525)
+        Me.btnLogout.Name = "btnLogout"
+        Me.btnLogout.Size = New System.Drawing.Size(185, 42)
+        Me.btnLogout.TabIndex = 6
+        Me.btnLogout.Text = "Logout"
+        Me.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnLogout.UseVisualStyleBackColor = True
+        '
         'HalamanUtama
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -229,4 +250,5 @@ Partial Class HalamanUtama
     Friend WithEvents btnkasir As FontAwesome.Sharp.IconButton
     Friend WithEvents tittletext As FontAwesome.Sharp.IconButton
     Friend WithEvents PanelUtama As Panel
+    Friend WithEvents btnLogout As FontAwesome.Sharp.IconButton
 End Class

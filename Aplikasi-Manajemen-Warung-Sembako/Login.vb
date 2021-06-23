@@ -63,4 +63,11 @@ Public Class Login
             txtPassword.Focus()
         End If
     End Sub
+
+    Sub resetFormLogin()
+        txtUsername.Text = "Masukan Username"
+        txtUsername.ForeColor = Color.Gray
+        txtPassword.Text = "Masukan Password"
+        txtPassword.ForeColor = Color.Gray
+    End Sub
 End Class
