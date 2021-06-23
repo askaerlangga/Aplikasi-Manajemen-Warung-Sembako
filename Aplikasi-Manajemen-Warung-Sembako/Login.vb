@@ -50,6 +50,11 @@ Public Class Login
         dr = cmd.ExecuteReader
         dr.Read()
         If dr.HasRows Then
+            If dr("jenis_user") = "admin" Then
+                HalamanUtama.menuAdmin()
+            Else
+                HalamanUtama.menuUser()
+            End If
             MessageBox.Show("Login Berhasil, Selamat datang " + dr("nama_user").ToString + "!")
             Me.Hide()
             HalamanUtama.Show()
