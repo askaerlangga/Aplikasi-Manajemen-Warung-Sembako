@@ -61,7 +61,8 @@ Partial Class HalamanUtama
         Me.btnpengaturan.IconColor = System.Drawing.Color.White
         Me.btnpengaturan.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnpengaturan.IconSize = 40
-        Me.btnpengaturan.Location = New System.Drawing.Point(15, 340)
+        Me.btnpengaturan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnpengaturan.Location = New System.Drawing.Point(3, 340)
         Me.btnpengaturan.Name = "btnpengaturan"
         Me.btnpengaturan.Size = New System.Drawing.Size(185, 42)
         Me.btnpengaturan.TabIndex = 5
@@ -79,6 +80,7 @@ Partial Class HalamanUtama
         Me.btngudang.IconColor = System.Drawing.Color.White
         Me.btngudang.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btngudang.IconSize = 40
+        Me.btngudang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btngudang.Location = New System.Drawing.Point(3, 244)
         Me.btngudang.Name = "btngudang"
         Me.btngudang.Size = New System.Drawing.Size(185, 42)
@@ -97,6 +99,7 @@ Partial Class HalamanUtama
         Me.btnlaporan.IconColor = System.Drawing.Color.White
         Me.btnlaporan.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnlaporan.IconSize = 40
+        Me.btnlaporan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnlaporan.Location = New System.Drawing.Point(3, 292)
         Me.btnlaporan.Name = "btnlaporan"
         Me.btnlaporan.Size = New System.Drawing.Size(185, 42)
@@ -115,6 +118,7 @@ Partial Class HalamanUtama
         Me.btnbukuutang.IconColor = System.Drawing.Color.White
         Me.btnbukuutang.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnbukuutang.IconSize = 40
+        Me.btnbukuutang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnbukuutang.Location = New System.Drawing.Point(3, 196)
         Me.btnbukuutang.Name = "btnbukuutang"
         Me.btnbukuutang.Size = New System.Drawing.Size(185, 42)
@@ -133,6 +137,7 @@ Partial Class HalamanUtama
         Me.btnkasir.IconColor = System.Drawing.Color.White
         Me.btnkasir.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnkasir.IconSize = 40
+        Me.btnkasir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnkasir.Location = New System.Drawing.Point(3, 148)
         Me.btnkasir.Name = "btnkasir"
         Me.btnkasir.Size = New System.Drawing.Size(185, 42)
@@ -151,6 +156,7 @@ Partial Class HalamanUtama
         Me.btndashboard.IconColor = System.Drawing.Color.White
         Me.btndashboard.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btndashboard.IconSize = 40
+        Me.btndashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btndashboard.Location = New System.Drawing.Point(3, 100)
         Me.btndashboard.Name = "btndashboard"
         Me.btndashboard.Size = New System.Drawing.Size(185, 42)
