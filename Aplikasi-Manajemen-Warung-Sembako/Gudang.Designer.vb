@@ -92,9 +92,8 @@ Partial Class Gudang
         Me.txnobarang.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txnobarang.ForeColor = System.Drawing.Color.White
         Me.txnobarang.Location = New System.Drawing.Point(151, 33)
-        Me.txnobarang.Multiline = True
         Me.txnobarang.Name = "txnobarang"
-        Me.txnobarang.Size = New System.Drawing.Size(247, 23)
+        Me.txnobarang.Size = New System.Drawing.Size(247, 14)
         Me.txnobarang.TabIndex = 5
         '
         'txnamabarang

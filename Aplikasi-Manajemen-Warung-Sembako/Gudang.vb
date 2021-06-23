@@ -61,11 +61,11 @@ Public Class Gudang
                 MsgBox("No Gudang Tidak Ada, Silahkan coba lagi!")
                 txnobarang.Focus()
             Else
+                txnamabarang.Focus()
                 txnamabarang.Text = dr.Item("NamaBarang")
                 txjumlah.Text = dr.Item("jumlah")
                 txharga.Text = dr.Item("harga")
                 cmbsatuan.Text = dr.Item("satuan")
-                txnamabarang.Focus()
             End If
         End If
     End Sub
@@ -78,5 +78,20 @@ Public Class Gudang
         MsgBox("Data Berhasil diUpdate")
         Call liatdata()
         Call bersih()
+    End Sub
+
+    Private Sub btnhapus_Click(sender As Object, e As EventArgs) Handles btnhapus.Click
+        If txnobarang.Text = "" Then
+            MsgBox("Silahkan Pilih Data yang akan di hapus dengan Masukan No Barang dan ENTER")
+        Else
+            If MessageBox.Show("Yakin akan dihapus..?", "", MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
+                konek()
+                Dim hapus As String = "delete From gudang  where nogudang='" & txnobarang.Text & "'"
+                cmd = New OdbcCommand(hapus, conn)
+                cmd.ExecuteNonQuery()
+                Call liatdata()
+                Call bersih()
+            End If
+        End If
     End Sub
 End Class
