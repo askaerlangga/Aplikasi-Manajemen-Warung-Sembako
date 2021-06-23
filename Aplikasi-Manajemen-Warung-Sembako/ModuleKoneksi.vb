@@ -14,7 +14,7 @@ Module ModuleKoneksi
     Sub konek()
         Dim lokasidata As String
 
-        lokasidata = "Driver={MySQL ODBC 3.51 Driver};Database=databasewarungkito;server=localhost;uid=root"
+        lokasidata = "Driver={MySQL ODBC 3.51 Driver};Database=dbwarungkito;server=localhost;uid=root"
         conn = New OdbcConnection(lokasidata)
         If conn.State = ConnectionState.Closed Then
             conn.Open()

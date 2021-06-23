@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 22 Jun 2021 pada 10.41
+-- Waktu pembuatan: 22 Jun 2021 pada 12.02
 -- Versi server: 10.4.18-MariaDB
 -- Versi PHP: 7.3.27
 
@@ -34,6 +34,14 @@ CREATE TABLE `gudang` (
   `harga` int(10) NOT NULL,
   `satuan` enum('pcs','kardus','liter','kg') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `gudang`
+--
+
+INSERT INTO `gudang` (`nogudang`, `NamaBarang`, `jumlah`, `harga`, `satuan`) VALUES
+('B001', 'Mie Goreng', 100, 2500, 'pcs'),
+('B002\r\n', 'Mie Rebus', 100, 3000, 'pcs');
 
 --
 -- Indexes for dumped tables
