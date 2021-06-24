@@ -1,28 +1,20 @@
 ﻿Public Class HalamanUtama
 
     Sub menuUser()
-        btndashboard.Enabled = True
         btnkasir.Enabled = True
         btnbukuutang.Enabled = True
         btngudang.Enabled = False
-        btnlaporan.Enabled = False
         btnpengaturan.Enabled = False
         Kasir.txtnamaadmin.Text = "Karyawan"
     End Sub
 
     Sub menuAdmin()
-        btndashboard.Enabled = True
         btnkasir.Enabled = True
         btnbukuutang.Enabled = True
         btngudang.Enabled = True
-        btnlaporan.Enabled = True
         btnpengaturan.Enabled = True
         Kasir.txtnamaadmin.Text = "ADMIN"
 
-    End Sub
-
-    Private Sub btndashboard_Click(sender As Object, e As EventArgs) Handles btndashboard.Click
-        tittletext.Text = btndashboard.Text
     End Sub
 
     Private Sub btnkasir_Click(sender As Object, e As EventArgs) Handles btnkasir.Click
@@ -58,17 +50,6 @@
         Gudang.Show()
     End Sub
 
-    Private Sub btnlaporan_Click(sender As Object, e As EventArgs) Handles btnlaporan.Click
-        tittletext.Text = btnlaporan.Text
-        Me.PanelUtama.Controls.Clear()
-        Laporan.TopLevel = False
-        Laporan.AutoSize = False
-        Laporan.FormBorderStyle = FormBorderStyle.None
-        Laporan.Dock = DockStyle.Fill
-        Me.PanelUtama.Controls.Add(Laporan)
-        Laporan.Show()
-    End Sub
-
     Private Sub btnpengaturan_Click(sender As Object, e As EventArgs) Handles btnpengaturan.Click
         tittletext.Text = btnpengaturan.Text
         Me.PanelUtama.Controls.Clear()
@@ -78,10 +59,6 @@
         Pengaturan.Dock = DockStyle.Fill
         Me.PanelUtama.Controls.Add(Pengaturan)
         Pengaturan.Show()
-    End Sub
-
-    Private Sub tittletext_Click(sender As Object, e As EventArgs) Handles tittletext.Click
-        btndashboard.Show()
     End Sub
 
     Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
