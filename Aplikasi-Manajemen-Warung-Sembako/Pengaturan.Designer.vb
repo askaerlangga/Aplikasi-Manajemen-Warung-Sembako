@@ -22,22 +22,12 @@ Partial Class Pengaturan
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.cmbJenisUser = New System.Windows.Forms.ComboBox()
+        Me.btnTambahUser = New System.Windows.Forms.Button()
+        Me.btnBatalUser = New System.Windows.Forms.Button()
+        Me.txtCariUser = New System.Windows.Forms.Button()
         Me.btnHapusUser = New System.Windows.Forms.Button()
+        Me.cmbJenisUser = New System.Windows.Forms.ComboBox()
         Me.btnEditUser = New System.Windows.Forms.Button()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.txtJabatanUser = New System.Windows.Forms.TextBox()
@@ -55,164 +45,8 @@ Partial Class Pengaturan
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.txtCariUser = New System.Windows.Forms.Button()
-        Me.btnBatalUser = New System.Windows.Forms.Button()
-        Me.btnTambahUser = New System.Windows.Forms.Button()
-        Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.Button2)
-        Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(421, 322)
-        Me.GroupBox1.TabIndex = 0
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Warung"
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.Red
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(277, 178)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(100, 41)
-        Me.Button2.TabIndex = 21
-        Me.Button2.Text = "Edit"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Red
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(130, 178)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 41)
-        Me.Button1.TabIndex = 20
-        Me.Button1.Text = "Simpan"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'TextBox5
-        '
-        Me.TextBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.ForeColor = System.Drawing.Color.White
-        Me.TextBox5.Location = New System.Drawing.Point(130, 149)
-        Me.TextBox5.Multiline = True
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(247, 23)
-        Me.TextBox5.TabIndex = 19
-        '
-        'TextBox4
-        '
-        Me.TextBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.ForeColor = System.Drawing.Color.White
-        Me.TextBox4.Location = New System.Drawing.Point(130, 122)
-        Me.TextBox4.Multiline = True
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(247, 23)
-        Me.TextBox4.TabIndex = 18
-        '
-        'TextBox3
-        '
-        Me.TextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.ForeColor = System.Drawing.Color.White
-        Me.TextBox3.Location = New System.Drawing.Point(130, 96)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(247, 23)
-        Me.TextBox3.TabIndex = 17
-        '
-        'TextBox2
-        '
-        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.ForeColor = System.Drawing.Color.White
-        Me.TextBox2.Location = New System.Drawing.Point(130, 69)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(247, 23)
-        Me.TextBox2.TabIndex = 16
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.ForeColor = System.Drawing.Color.White
-        Me.TextBox1.Location = New System.Drawing.Point(130, 43)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(247, 23)
-        Me.TextBox1.TabIndex = 15
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(21, 152)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(32, 13)
-        Me.Label5.TabIndex = 14
-        Me.Label5.Text = "Email"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(21, 125)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(45, 13)
-        Me.Label4.TabIndex = 13
-        Me.Label4.Text = "No Telp"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(21, 99)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(39, 13)
-        Me.Label3.TabIndex = 12
-        Me.Label3.Text = "Alamat"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(21, 72)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(76, 13)
-        Me.Label2.TabIndex = 11
-        Me.Label2.Text = "Nama Warung"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(21, 46)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(21, 13)
-        Me.Label1.TabIndex = 10
-        Me.Label1.Text = "No"
         '
         'GroupBox2
         '
@@ -238,25 +72,51 @@ Partial Class Pengaturan
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.Label9)
         Me.GroupBox2.Controls.Add(Me.Label10)
-        Me.GroupBox2.Location = New System.Drawing.Point(439, 12)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(421, 322)
         Me.GroupBox2.TabIndex = 22
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Pengaturan User"
         '
-        'cmbJenisUser
+        'btnTambahUser
         '
-        Me.cmbJenisUser.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.cmbJenisUser.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbJenisUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmbJenisUser.ForeColor = System.Drawing.Color.White
-        Me.cmbJenisUser.FormattingEnabled = True
-        Me.cmbJenisUser.Items.AddRange(New Object() {"admin", "user"})
-        Me.cmbJenisUser.Location = New System.Drawing.Point(130, 232)
-        Me.cmbJenisUser.Name = "cmbJenisUser"
-        Me.cmbJenisUser.Size = New System.Drawing.Size(247, 21)
-        Me.cmbJenisUser.TabIndex = 30
+        Me.btnTambahUser.BackColor = System.Drawing.Color.Red
+        Me.btnTambahUser.FlatAppearance.BorderSize = 0
+        Me.btnTambahUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTambahUser.ForeColor = System.Drawing.Color.White
+        Me.btnTambahUser.Location = New System.Drawing.Point(23, 265)
+        Me.btnTambahUser.Name = "btnTambahUser"
+        Me.btnTambahUser.Size = New System.Drawing.Size(84, 41)
+        Me.btnTambahUser.TabIndex = 32
+        Me.btnTambahUser.Text = "Tambah User"
+        Me.btnTambahUser.UseVisualStyleBackColor = False
+        '
+        'btnBatalUser
+        '
+        Me.btnBatalUser.BackColor = System.Drawing.Color.Red
+        Me.btnBatalUser.FlatAppearance.BorderSize = 0
+        Me.btnBatalUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBatalUser.ForeColor = System.Drawing.Color.White
+        Me.btnBatalUser.Location = New System.Drawing.Point(195, 265)
+        Me.btnBatalUser.Name = "btnBatalUser"
+        Me.btnBatalUser.Size = New System.Drawing.Size(51, 41)
+        Me.btnBatalUser.TabIndex = 30
+        Me.btnBatalUser.Text = "Batal"
+        Me.btnBatalUser.UseVisualStyleBackColor = False
+        '
+        'txtCariUser
+        '
+        Me.txtCariUser.BackColor = System.Drawing.Color.Red
+        Me.txtCariUser.FlatAppearance.BorderSize = 0
+        Me.txtCariUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.txtCariUser.ForeColor = System.Drawing.Color.White
+        Me.txtCariUser.Location = New System.Drawing.Point(310, 43)
+        Me.txtCariUser.Name = "txtCariUser"
+        Me.txtCariUser.Size = New System.Drawing.Size(67, 23)
+        Me.txtCariUser.TabIndex = 31
+        Me.txtCariUser.Text = "Cari"
+        Me.txtCariUser.UseVisualStyleBackColor = False
         '
         'btnHapusUser
         '
@@ -270,6 +130,19 @@ Partial Class Pengaturan
         Me.btnHapusUser.TabIndex = 29
         Me.btnHapusUser.Text = "Hapus"
         Me.btnHapusUser.UseVisualStyleBackColor = False
+        '
+        'cmbJenisUser
+        '
+        Me.cmbJenisUser.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.cmbJenisUser.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbJenisUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbJenisUser.ForeColor = System.Drawing.Color.White
+        Me.cmbJenisUser.FormattingEnabled = True
+        Me.cmbJenisUser.Items.AddRange(New Object() {"admin", "user"})
+        Me.cmbJenisUser.Location = New System.Drawing.Point(130, 232)
+        Me.cmbJenisUser.Name = "cmbJenisUser"
+        Me.cmbJenisUser.Size = New System.Drawing.Size(247, 21)
+        Me.cmbJenisUser.TabIndex = 30
         '
         'btnEditUser
         '
@@ -454,45 +327,6 @@ Partial Class Pengaturan
         Me.Label10.TabIndex = 10
         Me.Label10.Text = "Kode User"
         '
-        'txtCariUser
-        '
-        Me.txtCariUser.BackColor = System.Drawing.Color.Red
-        Me.txtCariUser.FlatAppearance.BorderSize = 0
-        Me.txtCariUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.txtCariUser.ForeColor = System.Drawing.Color.White
-        Me.txtCariUser.Location = New System.Drawing.Point(310, 43)
-        Me.txtCariUser.Name = "txtCariUser"
-        Me.txtCariUser.Size = New System.Drawing.Size(67, 23)
-        Me.txtCariUser.TabIndex = 31
-        Me.txtCariUser.Text = "Cari"
-        Me.txtCariUser.UseVisualStyleBackColor = False
-        '
-        'btnBatalUser
-        '
-        Me.btnBatalUser.BackColor = System.Drawing.Color.Red
-        Me.btnBatalUser.FlatAppearance.BorderSize = 0
-        Me.btnBatalUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBatalUser.ForeColor = System.Drawing.Color.White
-        Me.btnBatalUser.Location = New System.Drawing.Point(195, 265)
-        Me.btnBatalUser.Name = "btnBatalUser"
-        Me.btnBatalUser.Size = New System.Drawing.Size(51, 41)
-        Me.btnBatalUser.TabIndex = 30
-        Me.btnBatalUser.Text = "Batal"
-        Me.btnBatalUser.UseVisualStyleBackColor = False
-        '
-        'btnTambahUser
-        '
-        Me.btnTambahUser.BackColor = System.Drawing.Color.Red
-        Me.btnTambahUser.FlatAppearance.BorderSize = 0
-        Me.btnTambahUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTambahUser.ForeColor = System.Drawing.Color.White
-        Me.btnTambahUser.Location = New System.Drawing.Point(23, 265)
-        Me.btnTambahUser.Name = "btnTambahUser"
-        Me.btnTambahUser.Size = New System.Drawing.Size(84, 41)
-        Me.btnTambahUser.TabIndex = 32
-        Me.btnTambahUser.Text = "Tambah User"
-        Me.btnTambahUser.UseVisualStyleBackColor = False
-        '
         'Pengaturan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -501,30 +335,13 @@ Partial Class Pengaturan
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(866, 593)
         Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Pengaturan"
         Me.Text = "Pengaturan"
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label12 As Label
     Friend WithEvents Label11 As Label
