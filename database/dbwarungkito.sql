@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 22 Jun 2021 pada 12.02
+-- Waktu pembuatan: 24 Jun 2021 pada 09.44
 -- Versi server: 10.4.18-MariaDB
 -- Versi PHP: 7.3.27
 
@@ -40,8 +40,28 @@ CREATE TABLE `gudang` (
 --
 
 INSERT INTO `gudang` (`nogudang`, `NamaBarang`, `jumlah`, `harga`, `satuan`) VALUES
-('B001', 'Mie Goreng', 100, 2500, 'pcs'),
 ('B002\r\n', 'Mie Rebus', 100, 3000, 'pcs');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tbl_pelanggan`
+--
+
+CREATE TABLE `tbl_pelanggan` (
+  `nopelanggan` varchar(10) NOT NULL,
+  `namapelanggan` varchar(50) NOT NULL,
+  `alamatpelanggan` varchar(100) NOT NULL,
+  `notelp` varchar(12) NOT NULL,
+  `hutang` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `tbl_pelanggan`
+--
+
+INSERT INTO `tbl_pelanggan` (`nopelanggan`, `namapelanggan`, `alamatpelanggan`, `notelp`, `hutang`) VALUES
+('P001', 'Aska Erlangga', 'Komplek BAP', '089765372645', 50000);
 
 --
 -- Indexes for dumped tables
@@ -52,6 +72,12 @@ INSERT INTO `gudang` (`nogudang`, `NamaBarang`, `jumlah`, `harga`, `satuan`) VAL
 --
 ALTER TABLE `gudang`
   ADD PRIMARY KEY (`nogudang`);
+
+--
+-- Indeks untuk tabel `tbl_pelanggan`
+--
+ALTER TABLE `tbl_pelanggan`
+  ADD PRIMARY KEY (`nopelanggan`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

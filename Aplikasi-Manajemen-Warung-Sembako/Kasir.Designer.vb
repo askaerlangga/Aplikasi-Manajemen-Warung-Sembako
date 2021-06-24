@@ -29,11 +29,11 @@ Partial Class Kasir
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.lblnota = New System.Windows.Forms.Label()
+        Me.txtqty = New System.Windows.Forms.TextBox()
         Me.lbltanggal = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.btntambah = New System.Windows.Forms.Button()
+        Me.dgvkasir = New System.Windows.Forms.DataGridView()
         Me.barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.qty = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.satuan = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -41,23 +41,22 @@ Partial Class Kasir
         Me.total = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.txtkembali = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txtsubtotal = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.txtitem = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.cmbnamabarang = New System.Windows.Forms.ComboBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.txtharga = New System.Windows.Forms.TextBox()
+        Me.txttotal = New System.Windows.Forms.TextBox()
+        Me.txtnamabarang = New System.Windows.Forms.TextBox()
+        Me.txtsatuan = New System.Windows.Forms.TextBox()
+        Me.txtbayar = New System.Windows.Forms.TextBox()
+        CType(Me.dgvkasir, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -84,7 +83,7 @@ Partial Class Kasir
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(36, 109)
+        Me.Label3.Location = New System.Drawing.Point(79, 109)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(72, 13)
         Me.Label3.TabIndex = 2
@@ -117,21 +116,21 @@ Partial Class Kasir
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Tanggal"
         '
-        'Label7
+        'lblnota
         '
-        Me.Label7.BackColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(115, 64)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(122, 21)
-        Me.Label7.TabIndex = 6
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lblnota.BackColor = System.Drawing.Color.White
+        Me.lblnota.Location = New System.Drawing.Point(115, 64)
+        Me.lblnota.Name = "lblnota"
+        Me.lblnota.Size = New System.Drawing.Size(122, 21)
+        Me.lblnota.TabIndex = 6
+        Me.lblnota.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'TextBox2
+        'txtqty
         '
-        Me.TextBox2.Location = New System.Drawing.Point(279, 130)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(90, 20)
-        Me.TextBox2.TabIndex = 8
+        Me.txtqty.Location = New System.Drawing.Point(279, 130)
+        Me.txtqty.Name = "txtqty"
+        Me.txtqty.Size = New System.Drawing.Size(90, 20)
+        Me.txtqty.TabIndex = 2
         '
         'lbltanggal
         '
@@ -142,26 +141,26 @@ Partial Class Kasir
         Me.lbltanggal.TabIndex = 9
         Me.lbltanggal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Button1
+        'btntambah
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(742, 99)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 10
-        Me.Button1.Text = "Tambah"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btntambah.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btntambah.FlatAppearance.BorderSize = 0
+        Me.btntambah.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btntambah.Location = New System.Drawing.Point(742, 99)
+        Me.btntambah.Name = "btntambah"
+        Me.btntambah.Size = New System.Drawing.Size(75, 23)
+        Me.btntambah.TabIndex = 10
+        Me.btntambah.Text = "Tambah"
+        Me.btntambah.UseVisualStyleBackColor = False
         '
-        'DataGridView1
+        'dgvkasir
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.barang, Me.qty, Me.satuan, Me.harga, Me.total})
-        Me.DataGridView1.Location = New System.Drawing.Point(39, 160)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(778, 223)
-        Me.DataGridView1.TabIndex = 11
+        Me.dgvkasir.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvkasir.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.barang, Me.qty, Me.satuan, Me.harga, Me.total})
+        Me.dgvkasir.Location = New System.Drawing.Point(39, 160)
+        Me.dgvkasir.Name = "dgvkasir"
+        Me.dgvkasir.Size = New System.Drawing.Size(778, 223)
+        Me.dgvkasir.TabIndex = 11
         '
         'barang
         '
@@ -213,14 +212,6 @@ Partial Class Kasir
         Me.Label10.TabIndex = 13
         Me.Label10.Text = "Rp"
         '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(94, 433)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(229, 51)
-        Me.TextBox3.TabIndex = 14
-        '
         'Label11
         '
         Me.Label11.AutoSize = True
@@ -231,26 +222,13 @@ Partial Class Kasir
         Me.Label11.TabIndex = 15
         Me.Label11.Text = "Kembalian  :"
         '
-        'TextBox4
+        'txtkembali
         '
-        Me.TextBox4.Location = New System.Drawing.Point(199, 496)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.ReadOnly = True
-        Me.TextBox4.Size = New System.Drawing.Size(124, 20)
-        Me.TextBox4.TabIndex = 16
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(337, 429)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(92, 35)
-        Me.Button2.TabIndex = 17
-        Me.Button2.Text = "Bayar"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.txtkembali.Location = New System.Drawing.Point(199, 496)
+        Me.txtkembali.Name = "txtkembali"
+        Me.txtkembali.ReadOnly = True
+        Me.txtkembali.Size = New System.Drawing.Size(124, 20)
+        Me.txtkembali.TabIndex = 16
         '
         'Button3
         '
@@ -258,11 +236,11 @@ Partial Class Kasir
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(337, 480)
+        Me.Button3.Location = New System.Drawing.Point(337, 429)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(92, 35)
+        Me.Button3.Size = New System.Drawing.Size(92, 86)
         Me.Button3.TabIndex = 18
-        Me.Button3.Text = "Selesai"
+        Me.Button3.Text = "Cetak"
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Button4
@@ -278,13 +256,16 @@ Partial Class Kasir
         Me.Button4.Text = "Bersih"
         Me.Button4.UseVisualStyleBackColor = False
         '
-        'TextBox5
+        'txtsubtotal
         '
-        Me.TextBox5.Location = New System.Drawing.Point(586, 445)
-        Me.TextBox5.Multiline = True
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(231, 51)
-        Me.TextBox5.TabIndex = 22
+        Me.txtsubtotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtsubtotal.Location = New System.Drawing.Point(586, 445)
+        Me.txtsubtotal.Multiline = True
+        Me.txtsubtotal.Name = "txtsubtotal"
+        Me.txtsubtotal.Size = New System.Drawing.Size(231, 39)
+        Me.txtsubtotal.TabIndex = 22
+        Me.txtsubtotal.Text = "0"
+        Me.txtsubtotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label12
         '
@@ -302,17 +283,17 @@ Partial Class Kasir
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.Location = New System.Drawing.Point(531, 398)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(106, 31)
+        Me.Label13.Size = New System.Drawing.Size(102, 31)
         Me.Label13.TabIndex = 20
-        Me.Label13.Text = "BAYAR"
+        Me.Label13.Text = "TOTAL"
         '
-        'TextBox6
+        'txtitem
         '
-        Me.TextBox6.Location = New System.Drawing.Point(750, 410)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.ReadOnly = True
-        Me.TextBox6.Size = New System.Drawing.Size(67, 20)
-        Me.TextBox6.TabIndex = 24
+        Me.txtitem.Location = New System.Drawing.Point(750, 410)
+        Me.txtitem.Name = "txtitem"
+        Me.txtitem.ReadOnly = True
+        Me.txtitem.Size = New System.Drawing.Size(67, 20)
+        Me.txtitem.TabIndex = 24
         '
         'Label14
         '
@@ -324,62 +305,70 @@ Partial Class Kasir
         Me.Label14.TabIndex = 23
         Me.Label14.Text = "Jumlah Item"
         '
-        'cmbnamabarang
+        'txtharga
         '
-        Me.cmbnamabarang.FormattingEnabled = True
-        Me.cmbnamabarang.Location = New System.Drawing.Point(39, 130)
-        Me.cmbnamabarang.Name = "cmbnamabarang"
-        Me.cmbnamabarang.Size = New System.Drawing.Size(234, 21)
-        Me.cmbnamabarang.TabIndex = 25
+        Me.txtharga.Location = New System.Drawing.Point(520, 130)
+        Me.txtharga.Name = "txtharga"
+        Me.txtharga.ReadOnly = True
+        Me.txtharga.Size = New System.Drawing.Size(148, 20)
+        Me.txtharga.TabIndex = 27
         '
-        'TextBox1
+        'txttotal
         '
-        Me.TextBox1.Location = New System.Drawing.Point(375, 130)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(139, 20)
-        Me.TextBox1.TabIndex = 26
+        Me.txttotal.Location = New System.Drawing.Point(674, 130)
+        Me.txttotal.Name = "txttotal"
+        Me.txttotal.ReadOnly = True
+        Me.txttotal.Size = New System.Drawing.Size(143, 20)
+        Me.txttotal.TabIndex = 28
         '
-        'TextBox7
+        'txtnamabarang
         '
-        Me.TextBox7.Location = New System.Drawing.Point(520, 130)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(148, 20)
-        Me.TextBox7.TabIndex = 27
+        Me.txtnamabarang.Location = New System.Drawing.Point(82, 130)
+        Me.txtnamabarang.Name = "txtnamabarang"
+        Me.txtnamabarang.Size = New System.Drawing.Size(191, 20)
+        Me.txtnamabarang.TabIndex = 1
         '
-        'TextBox8
+        'txtsatuan
         '
-        Me.TextBox8.Location = New System.Drawing.Point(674, 131)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(143, 20)
-        Me.TextBox8.TabIndex = 28
+        Me.txtsatuan.Location = New System.Drawing.Point(375, 130)
+        Me.txtsatuan.Name = "txtsatuan"
+        Me.txtsatuan.Size = New System.Drawing.Size(139, 20)
+        Me.txtsatuan.TabIndex = 31
+        '
+        'txtbayar
+        '
+        Me.txtbayar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtbayar.Location = New System.Drawing.Point(94, 430)
+        Me.txtbayar.Name = "txtbayar"
+        Me.txtbayar.Size = New System.Drawing.Size(229, 38)
+        Me.txtbayar.TabIndex = 14
         '
         'Kasir
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(838, 527)
-        Me.Controls.Add(Me.TextBox8)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.cmbnamabarang)
-        Me.Controls.Add(Me.TextBox6)
+        Me.Controls.Add(Me.txtsatuan)
+        Me.Controls.Add(Me.txtnamabarang)
+        Me.Controls.Add(Me.txttotal)
+        Me.Controls.Add(Me.txtharga)
+        Me.Controls.Add(Me.txtitem)
         Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.txtsubtotal)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.txtkembali)
         Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txtbayar)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.dgvkasir)
+        Me.Controls.Add(Me.btntambah)
         Me.Controls.Add(Me.lbltanggal)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.txtqty)
+        Me.Controls.Add(Me.lblnota)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -387,8 +376,9 @@ Partial Class Kasir
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Kasir"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Kasir"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvkasir, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -400,32 +390,31 @@ Partial Class Kasir
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents lblnota As Label
+    Friend WithEvents txtqty As TextBox
     Friend WithEvents lbltanggal As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents btntambah As Button
+    Friend WithEvents dgvkasir As DataGridView
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label11 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtkembali As TextBox
     Friend WithEvents barang As DataGridViewTextBoxColumn
     Friend WithEvents qty As DataGridViewTextBoxColumn
     Friend WithEvents satuan As DataGridViewTextBoxColumn
     Friend WithEvents harga As DataGridViewTextBoxColumn
     Friend WithEvents total As DataGridViewTextBoxColumn
-    Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents txtsubtotal As TextBox
     Friend WithEvents Label12 As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents txtitem As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents cmbnamabarang As ComboBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents txtharga As TextBox
+    Friend WithEvents txttotal As TextBox
+    Friend WithEvents txtnamabarang As TextBox
+    Friend WithEvents txtsatuan As TextBox
+    Friend WithEvents txtbayar As TextBox
 End Class
