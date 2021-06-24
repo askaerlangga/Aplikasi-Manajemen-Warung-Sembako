@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{9F047238-1221-48B2-B8C1-12C2A89A84E6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Aplikasi_Manajemen_Warung_Sembako.Kasir</StartupObject>
+    <StartupObject>Aplikasi_Manajemen_Warung_Sembako.Pengaturan</StartupObject>
     <RootNamespace>Aplikasi_Manajemen_Warung_Sembako</RootNamespace>
     <AssemblyName>Aplikasi-Manajemen-Warung-Sembako</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -140,6 +140,12 @@
     <Compile Include="Pengaturan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="tambahUser.Designer.vb">
+      <DependentUpon>tambahUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tambahUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="BukuHutang.resx">
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pengaturan.resx">
       <DependentUpon>Pengaturan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tambahUser.resx">
+      <DependentUpon>tambahUser.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
