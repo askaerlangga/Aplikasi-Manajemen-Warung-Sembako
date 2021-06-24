@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Kasir
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Kasir
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Kasir))
@@ -65,6 +65,8 @@ Partial Class Kasir
         Me.txtnamapelanggan = New System.Windows.Forms.TextBox()
         Me.txtnamaadmin = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
+        Me.txthutang = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
         CType(Me.dgvkasir, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AxCrystalReport1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -93,7 +95,7 @@ Partial Class Kasir
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(79, 145)
+        Me.Label3.Location = New System.Drawing.Point(79, 150)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(72, 13)
         Me.Label3.TabIndex = 2
@@ -111,7 +113,7 @@ Partial Class Kasir
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(276, 145)
+        Me.Label5.Location = New System.Drawing.Point(276, 150)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(23, 13)
         Me.Label5.TabIndex = 4
@@ -138,7 +140,7 @@ Partial Class Kasir
         '
         'txtqty
         '
-        Me.txtqty.Location = New System.Drawing.Point(279, 166)
+        Me.txtqty.Location = New System.Drawing.Point(279, 171)
         Me.txtqty.Name = "txtqty"
         Me.txtqty.Size = New System.Drawing.Size(90, 20)
         Me.txtqty.TabIndex = 2
@@ -157,7 +159,7 @@ Partial Class Kasir
         Me.btntambah.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.btntambah.FlatAppearance.BorderSize = 0
         Me.btntambah.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btntambah.Location = New System.Drawing.Point(742, 135)
+        Me.btntambah.Location = New System.Drawing.Point(742, 140)
         Me.btntambah.Name = "btntambah"
         Me.btntambah.Size = New System.Drawing.Size(75, 23)
         Me.btntambah.TabIndex = 10
@@ -168,7 +170,7 @@ Partial Class Kasir
         '
         Me.dgvkasir.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvkasir.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.barang, Me.qty, Me.satuan, Me.harga, Me.total})
-        Me.dgvkasir.Location = New System.Drawing.Point(39, 196)
+        Me.dgvkasir.Location = New System.Drawing.Point(39, 201)
         Me.dgvkasir.Name = "dgvkasir"
         Me.dgvkasir.Size = New System.Drawing.Size(778, 223)
         Me.dgvkasir.TabIndex = 11
@@ -207,7 +209,7 @@ Partial Class Kasir
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(39, 422)
+        Me.Label9.Location = New System.Drawing.Point(39, 427)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(106, 31)
         Me.Label9.TabIndex = 12
@@ -217,7 +219,7 @@ Partial Class Kasir
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(39, 469)
+        Me.Label10.Location = New System.Drawing.Point(39, 474)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(49, 31)
         Me.Label10.TabIndex = 13
@@ -247,7 +249,7 @@ Partial Class Kasir
         Me.btncetak.FlatAppearance.BorderSize = 0
         Me.btncetak.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btncetak.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btncetak.Location = New System.Drawing.Point(337, 465)
+        Me.btncetak.Location = New System.Drawing.Point(337, 470)
         Me.btncetak.Name = "btncetak"
         Me.btncetak.Size = New System.Drawing.Size(92, 39)
         Me.btncetak.TabIndex = 18
@@ -260,7 +262,7 @@ Partial Class Kasir
         Me.Button4.FlatAppearance.BorderSize = 0
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(435, 465)
+        Me.Button4.Location = New System.Drawing.Point(435, 470)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(92, 86)
         Me.Button4.TabIndex = 19
@@ -270,7 +272,7 @@ Partial Class Kasir
         'txtsubtotal
         '
         Me.txtsubtotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtsubtotal.Location = New System.Drawing.Point(586, 481)
+        Me.txtsubtotal.Location = New System.Drawing.Point(586, 486)
         Me.txtsubtotal.Multiline = True
         Me.txtsubtotal.Name = "txtsubtotal"
         Me.txtsubtotal.Size = New System.Drawing.Size(231, 39)
@@ -282,7 +284,7 @@ Partial Class Kasir
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(531, 481)
+        Me.Label12.Location = New System.Drawing.Point(531, 486)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(49, 31)
         Me.Label12.TabIndex = 21
@@ -292,7 +294,7 @@ Partial Class Kasir
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(531, 434)
+        Me.Label13.Location = New System.Drawing.Point(531, 439)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(102, 31)
         Me.Label13.TabIndex = 20
@@ -300,7 +302,7 @@ Partial Class Kasir
         '
         'txtitem
         '
-        Me.txtitem.Location = New System.Drawing.Point(750, 446)
+        Me.txtitem.Location = New System.Drawing.Point(750, 451)
         Me.txtitem.Name = "txtitem"
         Me.txtitem.ReadOnly = True
         Me.txtitem.Size = New System.Drawing.Size(67, 20)
@@ -310,7 +312,7 @@ Partial Class Kasir
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(661, 446)
+        Me.Label14.Location = New System.Drawing.Point(661, 451)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(83, 17)
         Me.Label14.TabIndex = 23
@@ -318,7 +320,7 @@ Partial Class Kasir
         '
         'txtharga
         '
-        Me.txtharga.Location = New System.Drawing.Point(520, 166)
+        Me.txtharga.Location = New System.Drawing.Point(520, 171)
         Me.txtharga.Name = "txtharga"
         Me.txtharga.ReadOnly = True
         Me.txtharga.Size = New System.Drawing.Size(148, 20)
@@ -326,7 +328,7 @@ Partial Class Kasir
         '
         'txttotal
         '
-        Me.txttotal.Location = New System.Drawing.Point(674, 166)
+        Me.txttotal.Location = New System.Drawing.Point(674, 171)
         Me.txttotal.Name = "txttotal"
         Me.txttotal.ReadOnly = True
         Me.txttotal.Size = New System.Drawing.Size(143, 20)
@@ -334,14 +336,14 @@ Partial Class Kasir
         '
         'txtnamabarang
         '
-        Me.txtnamabarang.Location = New System.Drawing.Point(82, 166)
+        Me.txtnamabarang.Location = New System.Drawing.Point(82, 171)
         Me.txtnamabarang.Name = "txtnamabarang"
         Me.txtnamabarang.Size = New System.Drawing.Size(191, 20)
         Me.txtnamabarang.TabIndex = 1
         '
         'txtsatuan
         '
-        Me.txtsatuan.Location = New System.Drawing.Point(375, 166)
+        Me.txtsatuan.Location = New System.Drawing.Point(375, 171)
         Me.txtsatuan.Name = "txtsatuan"
         Me.txtsatuan.Size = New System.Drawing.Size(139, 20)
         Me.txtsatuan.TabIndex = 31
@@ -349,7 +351,7 @@ Partial Class Kasir
         'txtbayar
         '
         Me.txtbayar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtbayar.Location = New System.Drawing.Point(94, 466)
+        Me.txtbayar.Location = New System.Drawing.Point(94, 471)
         Me.txtbayar.Name = "txtbayar"
         Me.txtbayar.Size = New System.Drawing.Size(229, 38)
         Me.txtbayar.TabIndex = 14
@@ -360,7 +362,7 @@ Partial Class Kasir
         Me.btnbayarnanti.FlatAppearance.BorderSize = 0
         Me.btnbayarnanti.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnbayarnanti.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnbayarnanti.Location = New System.Drawing.Point(337, 513)
+        Me.btnbayarnanti.Location = New System.Drawing.Point(337, 518)
         Me.btnbayarnanti.Name = "btnbayarnanti"
         Me.btnbayarnanti.Size = New System.Drawing.Size(92, 39)
         Me.btnbayarnanti.TabIndex = 32
@@ -428,11 +430,30 @@ Partial Class Kasir
         Me.Label15.TabIndex = 38
         Me.Label15.Text = "Admin"
         '
+        'txthutang
+        '
+        Me.txthutang.Location = New System.Drawing.Point(345, 124)
+        Me.txthutang.Name = "txthutang"
+        Me.txthutang.ReadOnly = True
+        Me.txthutang.Size = New System.Drawing.Size(128, 20)
+        Me.txthutang.TabIndex = 41
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(249, 124)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(42, 13)
+        Me.Label16.TabIndex = 40
+        Me.Label16.Text = "Hutang"
+        '
         'Kasir
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(838, 572)
+        Me.Controls.Add(Me.txthutang)
+        Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.txtnamaadmin)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.txtnamapelanggan)
@@ -519,4 +540,6 @@ Partial Class Kasir
     Friend WithEvents txtnamapelanggan As TextBox
     Friend WithEvents txtnamaadmin As TextBox
     Friend WithEvents Label15 As Label
+    Friend WithEvents txthutang As TextBox
+    Friend WithEvents Label16 As Label
 End Class
