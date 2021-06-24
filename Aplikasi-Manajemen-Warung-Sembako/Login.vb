@@ -49,9 +49,11 @@ Public Class Login
         cmd = New OdbcCommand("select * from tabelUser where username_user='" & txtUsername.Text & "' and password_user='" & txtPassword.Text & "'", conn)
         dr = cmd.ExecuteReader
         dr.Read()
+        Kasir.txtkduser.Text = dr("kode_user")
         If dr.HasRows Then
             If dr("jenis_user") = "admin" Then
                 HalamanUtama.menuAdmin()
+
             Else
                 HalamanUtama.menuUser()
             End If
@@ -69,5 +71,9 @@ Public Class Login
         txtUsername.ForeColor = Color.Gray
         txtPassword.Text = "Masukan Password"
         txtPassword.ForeColor = Color.Gray
+    End Sub
+
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

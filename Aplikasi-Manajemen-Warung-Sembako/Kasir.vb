@@ -1,8 +1,9 @@
 ﻿Imports System.Data.Odbc
 
 Public Class Kasir
-    Dim TglMysql As String
+    Dim TglMysql, baris As String
     Dim hutangtambah As Integer
+
 
     Sub bersih()
         lblnota.Text = ""
@@ -10,15 +11,8 @@ Public Class Kasir
         cmbidpelanggan.Text = ""
         txtnamapelanggan.Text = ""
         txthutang.Text = ""
-        txtnamaadmin.Text = ""
         txtnamabarang.Text = ""
         txtqty.Text = ""
-        txtharga.Text = ""
-        txttotal.Text = ""
-        txtsatuan.Text = ""
-        txtbayar.Text = ""
-        txttotal.Text = "0"
-        txtsubtotal.Text = "0"
         txtkembali.Text = ""
         txtitem.Text = ""
         dgvkasir.Rows.Clear()
@@ -28,10 +22,25 @@ Public Class Kasir
             MsgBox("Tidak Ada Transaksi, Silakan Transaksi dahulu")
         Else
             TglMysql = Format(Today, "yyyy-MM-dd")
-            Dim simpanbarang As String = "Insert into tbl_detailbarang values ('" & lblnota.Text & "','" & TglMysql & "','" & txtitem.Text & "', '" & txtsubtotal.Text & "', '" & txtbayar.Text & "', '" & txtkembali.Text & "', '" & txtnamaadmin.Text & "')"
+            Dim simpanbarang As String = "Insert into tbl_detailbarang values ('" & lblnota.Text & "','" & TglMysql & "','" & txtitem.Text & "', '" & txtsubtotal.Text & "', '" & txtbayar.Text & "', '" & txtkembali.Text & "', '" & txtnamaadmin.Text & "', '" & txtkduser.Text & "')"
             cmd = New OdbcCommand(simpanbarang, conn)
             cmd.ExecuteNonQuery()
-            MsgBox("Transaksi berhasil")
+
+            For baris As Integer = 0 To dgvkasir.Rows.Count - 2
+                Dim simpandetail As String = "Insert into tbl_barang values('" & lblnota.Text & "', '" & dgvkasir.Rows(baris).Cells(0).Value & "', '" & dgvkasir.Rows(baris).Cells(1).Value & "', '" & dgvkasir.Rows(baris).Cells(2).Value & "', '" & dgvkasir.Rows(baris).Cells(3).Value & "', '" & dgvkasir.Rows(baris).Cells(4).Value & "')"
+                cmd = New OdbcCommand(simpandetail, conn)
+                cmd.ExecuteNonQuery()
+            Next
+            If MessageBox.Show("Apakah Ingin Cetak Struk...?", "", MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
+                AxCrystalReport1.SelectionFormula = "totext ({tbl_barang.nonota})='" & lblnota.Text & "'"
+                AxCrystalReport1.ReportFileName = "strukpenjualan.rpt"
+                AxCrystalReport1.WindowState = Crystal.WindowStateConstants.crptMaximized
+                AxCrystalReport1.RetrieveDataFiles()
+                AxCrystalReport1.Action = 1
+                MsgBox("Transaksi berhasil")
+            Else
+                MsgBox("Transaksi berhasil")
+            End If
         End If
     End Sub
     Sub bayarnanti()
@@ -42,7 +51,7 @@ Public Class Kasir
 
             hutangtambah = Val(txtsubtotal.Text) + Val(txthutang.Text)
             konek()
-            Dim edit As String = "update tbl_pelanggan set hutang='" & hutangtambah & "' where nopelanggan='" & cmbidpelanggan.Text & "'"
+            Dim edit As String = "update tbl_pelanggan Set hutang='" & hutangtambah & "' where nopelanggan='" & cmbidpelanggan.Text & "'"
             cmd = New OdbcCommand(edit, conn)
             cmd.ExecuteNonQuery()
             cetakstruk()
@@ -79,7 +88,7 @@ Public Class Kasir
         txtsubtotal.Text = "0"
         txtitem.Text = "0"
         kodepelanggan()
-        bersih()
+
     End Sub
 
     Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtnamabarang.KeyPress

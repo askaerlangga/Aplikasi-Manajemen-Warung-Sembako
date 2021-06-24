@@ -7,6 +7,7 @@
         btngudang.Enabled = False
         btnlaporan.Enabled = False
         btnpengaturan.Enabled = False
+        Kasir.txtnamaadmin.Text = "Karyawan"
     End Sub
 
     Sub menuAdmin()
@@ -16,6 +17,8 @@
         btngudang.Enabled = True
         btnlaporan.Enabled = True
         btnpengaturan.Enabled = True
+        Kasir.txtnamaadmin.Text = "ADMIN"
+
     End Sub
 
     Private Sub btndashboard_Click(sender As Object, e As EventArgs) Handles btndashboard.Click
@@ -85,5 +88,9 @@
         Me.Close()
         Login.Show()
         Login.resetFormLogin()
+    End Sub
+
+    Private Sub HalamanUtama_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

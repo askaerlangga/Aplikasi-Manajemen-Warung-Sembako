@@ -67,6 +67,8 @@ Partial Class Kasir
         Me.Label15 = New System.Windows.Forms.Label()
         Me.txthutang = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
+        Me.txtkduser = New System.Windows.Forms.TextBox()
+        Me.Label17 = New System.Windows.Forms.Label()
         CType(Me.dgvkasir, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AxCrystalReport1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -414,17 +416,16 @@ Partial Class Kasir
         '
         'txtnamaadmin
         '
-        Me.txtnamaadmin.Location = New System.Drawing.Point(698, 95)
+        Me.txtnamaadmin.Location = New System.Drawing.Point(698, 114)
         Me.txtnamaadmin.Name = "txtnamaadmin"
         Me.txtnamaadmin.ReadOnly = True
         Me.txtnamaadmin.Size = New System.Drawing.Size(119, 20)
         Me.txtnamaadmin.TabIndex = 39
-        Me.txtnamaadmin.Text = "EDO"
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(632, 98)
+        Me.Label15.Location = New System.Drawing.Point(632, 117)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(36, 13)
         Me.Label15.TabIndex = 38
@@ -447,11 +448,30 @@ Partial Class Kasir
         Me.Label16.TabIndex = 40
         Me.Label16.Text = "Hutang"
         '
+        'txtkduser
+        '
+        Me.txtkduser.Location = New System.Drawing.Point(698, 88)
+        Me.txtkduser.Name = "txtkduser"
+        Me.txtkduser.ReadOnly = True
+        Me.txtkduser.Size = New System.Drawing.Size(119, 20)
+        Me.txtkduser.TabIndex = 43
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(632, 91)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(57, 13)
+        Me.Label17.TabIndex = 42
+        Me.Label17.Text = "Kode User"
+        '
         'Kasir
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(838, 572)
+        Me.Controls.Add(Me.txtkduser)
+        Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.txthutang)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.txtnamaadmin)
@@ -542,4 +562,6 @@ Partial Class Kasir
     Friend WithEvents Label15 As Label
     Friend WithEvents txthutang As TextBox
     Friend WithEvents Label16 As Label
+    Friend WithEvents txtkduser As TextBox
+    Friend WithEvents Label17 As Label
 End Class
