@@ -137,7 +137,6 @@ Partial Class Kasir
         Me.lblnota.Name = "lblnota"
         Me.lblnota.Size = New System.Drawing.Size(122, 21)
         Me.lblnota.TabIndex = 6
-        Me.lblnota.Text = "P00123"
         Me.lblnota.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'txtqty

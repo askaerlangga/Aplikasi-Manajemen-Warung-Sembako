@@ -17,6 +17,7 @@ Public Class Kasir
             hitung = Microsoft.VisualBasic.Right(dr.GetString(0), 9) + 1
             Urutankode = "N" + Format(Now, "yyMMdd") + Microsoft.VisualBasic.Right("000" & hitung, 3)
         End If
+        lblnota.Text = Urutankode
     End Sub
     Sub bersih()
         lblnota.Text = ""
@@ -193,6 +194,10 @@ Public Class Kasir
             txtnamapelanggan.Text = dr!namapelanggan
             txthutang.Text = dr!hutang
         End If
+    End Sub
+
+    Private Sub lblnota_Click(sender As Object, e As EventArgs) Handles lblnota.Click
+
     End Sub
 
     Private Sub btnbayarnanti_Click(sender As Object, e As EventArgs) Handles btnbayarnanti.Click
