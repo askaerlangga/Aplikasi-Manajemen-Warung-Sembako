@@ -22,8 +22,8 @@ Partial Class Pelanggan
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.dgvgudang = New System.Windows.Forms.DataGridView()
-        Me.btnbersih = New System.Windows.Forms.Button()
+        Me.dgvpelanggan = New System.Windows.Forms.DataGridView()
+        Me.btntutup = New System.Windows.Forms.Button()
         Me.btnhapus = New System.Windows.Forms.Button()
         Me.btnedit = New System.Windows.Forms.Button()
         Me.btnsimpan = New System.Windows.Forms.Button()
@@ -35,30 +35,30 @@ Partial Class Pelanggan
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.dgvgudang, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvpelanggan, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'dgvgudang
+        'dgvpelanggan
         '
-        Me.dgvgudang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvgudang.Location = New System.Drawing.Point(73, 183)
-        Me.dgvgudang.Name = "dgvgudang"
-        Me.dgvgudang.Size = New System.Drawing.Size(657, 231)
-        Me.dgvgudang.TabIndex = 31
+        Me.dgvpelanggan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvpelanggan.Location = New System.Drawing.Point(73, 183)
+        Me.dgvpelanggan.Name = "dgvpelanggan"
+        Me.dgvpelanggan.Size = New System.Drawing.Size(657, 231)
+        Me.dgvpelanggan.TabIndex = 31
         '
-        'btnbersih
+        'btntutup
         '
-        Me.btnbersih.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.btnbersih.FlatAppearance.BorderSize = 0
-        Me.btnbersih.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnbersih.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnbersih.ForeColor = System.Drawing.Color.White
-        Me.btnbersih.Location = New System.Drawing.Point(593, 103)
-        Me.btnbersih.Name = "btnbersih"
-        Me.btnbersih.Size = New System.Drawing.Size(113, 46)
-        Me.btnbersih.TabIndex = 29
-        Me.btnbersih.Text = "Bersih"
-        Me.btnbersih.UseVisualStyleBackColor = False
+        Me.btntutup.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.btntutup.FlatAppearance.BorderSize = 0
+        Me.btntutup.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btntutup.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btntutup.ForeColor = System.Drawing.Color.White
+        Me.btntutup.Location = New System.Drawing.Point(593, 103)
+        Me.btntutup.Name = "btntutup"
+        Me.btntutup.Size = New System.Drawing.Size(113, 46)
+        Me.btntutup.TabIndex = 29
+        Me.btntutup.Text = " Tutup"
+        Me.btntutup.UseVisualStyleBackColor = False
         '
         'btnhapus
         '
@@ -142,11 +142,11 @@ Partial Class Pelanggan
         '
         Me.txtnopelanggan.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.txtnopelanggan.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtnopelanggan.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtnopelanggan.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtnopelanggan.ForeColor = System.Drawing.Color.White
         Me.txtnopelanggan.Location = New System.Drawing.Point(179, 37)
         Me.txtnopelanggan.Name = "txtnopelanggan"
-        Me.txtnopelanggan.Size = New System.Drawing.Size(247, 14)
+        Me.txtnopelanggan.Size = New System.Drawing.Size(247, 19)
         Me.txtnopelanggan.TabIndex = 22
         '
         'Label4
@@ -190,8 +190,8 @@ Partial Class Pelanggan
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.dgvgudang)
-        Me.Controls.Add(Me.btnbersih)
+        Me.Controls.Add(Me.dgvpelanggan)
+        Me.Controls.Add(Me.btntutup)
         Me.Controls.Add(Me.btnhapus)
         Me.Controls.Add(Me.btnedit)
         Me.Controls.Add(Me.btnsimpan)
@@ -206,14 +206,14 @@ Partial Class Pelanggan
         Me.Name = "Pelanggan"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Pelanggan"
-        CType(Me.dgvgudang, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvpelanggan, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents dgvgudang As DataGridView
-    Friend WithEvents btnbersih As Button
+    Friend WithEvents dgvpelanggan As DataGridView
+    Friend WithEvents btntutup As Button
     Friend WithEvents btnhapus As Button
     Friend WithEvents btnedit As Button
     Friend WithEvents btnsimpan As Button

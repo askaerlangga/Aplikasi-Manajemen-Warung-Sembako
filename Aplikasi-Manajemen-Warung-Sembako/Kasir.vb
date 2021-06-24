@@ -40,7 +40,7 @@ Public Class Kasir
             MsgBox("Tidak Ada Transaksi/Nama Pelanggan Tidak Ada")
         Else
 
-            hutangtambah = Val(txthutang.Text) + Val(txtsubtotal.Text)
+            hutangtambah = Val(txtsubtotal.Text) + Val(txthutang.Text)
             konek()
             Dim edit As String = "update tbl_pelanggan set hutang='" & hutangtambah & "' where nopelanggan='" & cmbidpelanggan.Text & "'"
             cmd = New OdbcCommand(edit, conn)

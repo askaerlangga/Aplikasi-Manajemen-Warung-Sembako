@@ -43,7 +43,7 @@ Public Class BukuHutang
 
     Private Sub btnbayar_Click(sender As Object, e As EventArgs) Handles btnbayar.Click
         konek()
-        Dim edit As String = "update tbl_pelanggan set hutang='" & txtbayar.Text & "'"
+        Dim edit As String = "update tbl_pelanggan set hutang='" & lblnominal.Text & "', keterangan='" & lbllunas.Text & "' where nopelanggan='" & txtnopelanggan.Text & "'"
         cmd = New OdbcCommand(edit, conn)
         cmd.ExecuteNonQuery()
         MsgBox("Data Berhasil diUpdate")
@@ -63,5 +63,9 @@ Public Class BukuHutang
         Else
 
         End If
+    End Sub
+
+    Private Sub btnpelanggan_Click(sender As Object, e As EventArgs) Handles btnpelanggan.Click
+        Pelanggan.Show()
     End Sub
 End Class
