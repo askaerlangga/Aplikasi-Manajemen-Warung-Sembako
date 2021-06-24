@@ -4,7 +4,20 @@ Public Class Kasir
     Dim TglMysql, baris As String
     Dim hutangtambah As Integer
 
-
+    Sub nonotaotomatis()
+        konek()
+        cmd = New OdbcCommand("select * from tbl_detailbarang where nonota in (select max(nonota) from tbl_detailbarang)", conn)
+        Dim Urutankode As String
+        Dim hitung As Long
+        dr = cmd.ExecuteReader
+        dr.Read()
+        If Not dr.HasRows Then
+            Urutankode = "N" + Format(Now, "yyMMdd") + "001"
+        Else
+            hitung = Microsoft.VisualBasic.Right(dr.GetString(0), 9) + 1
+            Urutankode = "N" + Format(Now, "yyMMdd") + Microsoft.VisualBasic.Right("000" & hitung, 3)
+        End If
+    End Sub
     Sub bersih()
         lblnota.Text = ""
         lbltanggal.Text = ""
@@ -88,7 +101,7 @@ Public Class Kasir
         txtsubtotal.Text = "0"
         txtitem.Text = "0"
         kodepelanggan()
-
+        nonotaotomatis()
     End Sub
 
     Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtnamabarang.KeyPress
