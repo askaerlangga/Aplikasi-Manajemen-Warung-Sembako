@@ -68,6 +68,13 @@
     End Sub
 
     Private Sub HalamanUtama_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        tittletext.Text = btnkasir.Text
+        Me.PanelUtama.Controls.Clear()
+        Kasir.TopLevel = False
+        Kasir.AutoSize = False
+        Kasir.FormBorderStyle = FormBorderStyle.None
+        Kasir.Dock = DockStyle.Fill
+        Me.PanelUtama.Controls.Add(Kasir)
+        Kasir.Show()
     End Sub
 End Class
