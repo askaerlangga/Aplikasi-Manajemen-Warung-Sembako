@@ -96,4 +96,11 @@ Public Class Kasir
         End If
     End Sub
 
+    Private Sub btncetak_Click(sender As Object, e As EventArgs) Handles btncetak.Click
+        If txtbayar.Text = "" Or txtitem.Text = "" Or txttotal.Text = "" Then
+            MsgBox("Tidak Ada Transaksi, Silakan Transaksi dahulu")
+        Else
+            Dim simpanbarang As String = "insert into tbl_detailbarang values ('" & lblnota.Text & "','" & lbltanggal.Text & "', '" & txttotal.Text & "', '" & txtbayar.Text & "', '" & txtkembali.Text & "'"
+        End If
+    End Sub
 End Class
