@@ -1,6 +1,8 @@
 ﻿Imports System.Data.Odbc
 
 Public Class Kasir
+    Dim TglMysql As String
+
     Sub tampildata()
         konek()
         Try
@@ -14,11 +16,23 @@ Public Class Kasir
         End Try
     End Sub
 
+    Sub kodepelanggan()
+        konek()
+        cmbidpelanggan.Items.Clear()
+        cmd = New OdbcCommand("Select * from tbl_pelanggan", conn)
+        dr = cmd.ExecuteReader
+        Do While dr.Read
+            cmbidpelanggan.Items.Add(dr.Item(0))
+
+        Loop
+    End Sub
+
     Private Sub Kasir_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txtnamabarang.Focus()
         lbltanggal.Text = Today
         txtsubtotal.Text = "0"
         txtitem.Text = "0"
+        kodepelanggan()
     End Sub
 
     Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtnamabarang.KeyPress
@@ -97,10 +111,36 @@ Public Class Kasir
     End Sub
 
     Private Sub btncetak_Click(sender As Object, e As EventArgs) Handles btncetak.Click
-        If txtbayar.Text = "" Or txtitem.Text = "" Or txttotal.Text = "" Then
+        If txtbayar.Text = "" Or txtitem.Text = "" Or txtsubtotal.Text = "" Then
             MsgBox("Tidak Ada Transaksi, Silakan Transaksi dahulu")
         Else
-            Dim simpanbarang As String = "insert into tbl_detailbarang values ('" & lblnota.Text & "','" & lbltanggal.Text & "', '" & txttotal.Text & "', '" & txtbayar.Text & "', '" & txtkembali.Text & "'"
+            TglMysql = Format(lbltanggal, "yyy-MM-dd")
+            Dim simpanbarang As String = "Insert into tbl_detailbarang values ('" & lblnota.Text & "','" & TglMysql & "','" & txtitem.Text & "', '" & txtsubtotal.Text & "', '" & txtbayar.Text & "', '" & txtkembali.Text & "', '" & txtnamaadmin.Text & "')"
+            cmd = New OdbcCommand(simpanbarang, conn)
+            cmd.ExecuteNonQuery()
+
+        End If
+    End Sub
+
+    Private Sub cmbidpelanggan_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbidpelanggan.SelectedIndexChanged
+        konek()
+        cmd = New OdbcCommand("Select * from tbl_pelanggan where nopelanggan ='" & cmbidpelanggan.Text & "'", conn)
+        dr = cmd.ExecuteReader
+        dr.Read()
+        If dr.HasRows Then
+            txtnamapelanggan.Text = dr!namapelanggan
+        End If
+    End Sub
+
+    Private Sub btnbayarnanti_Click(sender As Object, e As EventArgs) Handles btnbayarnanti.Click
+        If txtbayar.Text = "" Or txtitem.Text = "" Or txtsubtotal.Text = "" Then
+            MsgBox("Tidak Ada Transaksi, Silakan Transaksi dahulu")
+        Else
+            TglMysql = Format(lbltanggal, "yyy-MM-dd")
+            Dim simpanbarang As String = "Insert into tbl_detailbarang values ('" & lblnota.Text & "','" & TglMysql & "','" & txtitem.Text & "', '" & txtsubtotal.Text & "', '" & txtbayar.Text & "', '" & txtkembali.Text & "', '" & txtnamaadmin.Text & "')"
+            cmd = New OdbcCommand(simpanbarang, conn)
+            cmd.ExecuteNonQuery()
+
         End If
     End Sub
 End Class

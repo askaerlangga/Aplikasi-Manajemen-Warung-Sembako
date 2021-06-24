@@ -133,6 +133,7 @@ Partial Class Kasir
         Me.lblnota.Name = "lblnota"
         Me.lblnota.Size = New System.Drawing.Size(122, 21)
         Me.lblnota.TabIndex = 6
+        Me.lblnota.Text = "P00123"
         Me.lblnota.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'txtqty
@@ -234,7 +235,7 @@ Partial Class Kasir
         '
         'txtkembali
         '
-        Me.txtkembali.Location = New System.Drawing.Point(199, 532)
+        Me.txtkembali.Location = New System.Drawing.Point(197, 532)
         Me.txtkembali.Name = "txtkembali"
         Me.txtkembali.ReadOnly = True
         Me.txtkembali.Size = New System.Drawing.Size(124, 20)
@@ -416,6 +417,7 @@ Partial Class Kasir
         Me.txtnamaadmin.ReadOnly = True
         Me.txtnamaadmin.Size = New System.Drawing.Size(119, 20)
         Me.txtnamaadmin.TabIndex = 39
+        Me.txtnamaadmin.Text = "EDO"
         '
         'Label15
         '

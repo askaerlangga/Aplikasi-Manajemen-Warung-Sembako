@@ -23,6 +23,7 @@ Partial Class HalamanUtama
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnLogout = New FontAwesome.Sharp.IconButton()
         Me.btnpengaturan = New FontAwesome.Sharp.IconButton()
         Me.btngudang = New FontAwesome.Sharp.IconButton()
         Me.btnlaporan = New FontAwesome.Sharp.IconButton()
@@ -32,7 +33,6 @@ Partial Class HalamanUtama
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.tittletext = New FontAwesome.Sharp.IconButton()
         Me.PanelUtama = New System.Windows.Forms.Panel()
-        Me.btnLogout = New FontAwesome.Sharp.IconButton()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -50,8 +50,27 @@ Partial Class HalamanUtama
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(200, 579)
+        Me.Panel1.Size = New System.Drawing.Size(200, 639)
         Me.Panel1.TabIndex = 0
+        '
+        'btnLogout
+        '
+        Me.btnLogout.FlatAppearance.BorderSize = 0
+        Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLogout.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogout.ForeColor = System.Drawing.Color.White
+        Me.btnLogout.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt
+        Me.btnLogout.IconColor = System.Drawing.Color.White
+        Me.btnLogout.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnLogout.IconSize = 40
+        Me.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnLogout.Location = New System.Drawing.Point(3, 525)
+        Me.btnLogout.Name = "btnLogout"
+        Me.btnLogout.Size = New System.Drawing.Size(185, 42)
+        Me.btnLogout.TabIndex = 6
+        Me.btnLogout.Text = "Logout"
+        Me.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnLogout.UseVisualStyleBackColor = True
         '
         'btnpengaturan
         '
@@ -174,7 +193,7 @@ Partial Class HalamanUtama
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(200, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(861, 44)
+        Me.Panel2.Size = New System.Drawing.Size(909, 44)
         Me.Panel2.TabIndex = 1
         '
         'tittletext
@@ -201,33 +220,14 @@ Partial Class HalamanUtama
         Me.PanelUtama.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelUtama.Location = New System.Drawing.Point(200, 44)
         Me.PanelUtama.Name = "PanelUtama"
-        Me.PanelUtama.Size = New System.Drawing.Size(861, 535)
+        Me.PanelUtama.Size = New System.Drawing.Size(909, 595)
         Me.PanelUtama.TabIndex = 2
-        '
-        'btnLogout
-        '
-        Me.btnLogout.FlatAppearance.BorderSize = 0
-        Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLogout.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLogout.ForeColor = System.Drawing.Color.White
-        Me.btnLogout.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt
-        Me.btnLogout.IconColor = System.Drawing.Color.White
-        Me.btnLogout.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnLogout.IconSize = 40
-        Me.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnLogout.Location = New System.Drawing.Point(3, 525)
-        Me.btnLogout.Name = "btnLogout"
-        Me.btnLogout.Size = New System.Drawing.Size(185, 42)
-        Me.btnLogout.TabIndex = 6
-        Me.btnLogout.Text = "Logout"
-        Me.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnLogout.UseVisualStyleBackColor = True
         '
         'HalamanUtama
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1061, 579)
+        Me.ClientSize = New System.Drawing.Size(1109, 639)
         Me.Controls.Add(Me.PanelUtama)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
