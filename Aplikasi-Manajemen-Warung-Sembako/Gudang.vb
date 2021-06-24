@@ -66,6 +66,8 @@ Public Class Gudang
                 txjumlah.Text = dr.Item("jumlah")
                 txharga.Text = dr.Item("harga")
                 cmbsatuan.Text = dr.Item("satuan")
+
+                btnsimpan.Enabled = False
             End If
         End If
     End Sub
@@ -78,6 +80,7 @@ Public Class Gudang
         MsgBox("Data Berhasil diUpdate")
         Call liatdata()
         Call bersih()
+        btnsimpan.Enabled = True
     End Sub
 
     Private Sub btnhapus_Click(sender As Object, e As EventArgs) Handles btnhapus.Click
