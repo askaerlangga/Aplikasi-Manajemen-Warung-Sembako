@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{9F047238-1221-48B2-B8C1-12C2A89A84E6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Aplikasi_Manajemen_Warung_Sembako.HalamanUtama</StartupObject>
+    <StartupObject>Aplikasi_Manajemen_Warung_Sembako.Login</StartupObject>
     <RootNamespace>Aplikasi_Manajemen_Warung_Sembako</RootNamespace>
     <AssemblyName>Aplikasi-Manajemen-Warung-Sembako</AssemblyName>
     <FileAlignment>512</FileAlignment>
