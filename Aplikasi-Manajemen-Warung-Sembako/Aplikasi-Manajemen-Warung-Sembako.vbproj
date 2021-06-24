@@ -140,6 +140,12 @@
     <Compile Include="Pengaturan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="tambahUser.Designer.vb">
+      <DependentUpon>tambahUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tambahUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="BukuHutang.resx">
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pengaturan.resx">
       <DependentUpon>Pengaturan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tambahUser.resx">
+      <DependentUpon>tambahUser.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
