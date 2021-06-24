@@ -1,4 +1,23 @@
 ﻿Public Class HalamanUtama
+
+    Sub menuUser()
+        btndashboard.Enabled = True
+        btnkasir.Enabled = True
+        btnbukuutang.Enabled = True
+        btngudang.Enabled = False
+        btnlaporan.Enabled = False
+        btnpengaturan.Enabled = False
+    End Sub
+
+    Sub menuAdmin()
+        btndashboard.Enabled = True
+        btnkasir.Enabled = True
+        btnbukuutang.Enabled = True
+        btngudang.Enabled = True
+        btnlaporan.Enabled = True
+        btnpengaturan.Enabled = True
+    End Sub
+
     Private Sub btndashboard_Click(sender As Object, e As EventArgs) Handles btndashboard.Click
         tittletext.Text = btndashboard.Text
     End Sub
@@ -60,5 +79,11 @@
 
     Private Sub tittletext_Click(sender As Object, e As EventArgs) Handles tittletext.Click
         btndashboard.Show()
+    End Sub
+
+    Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
+        Me.Close()
+        Login.Show()
+        Login.resetFormLogin()
     End Sub
 End Class

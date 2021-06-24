@@ -30,9 +30,9 @@ Partial Class Login
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -73,6 +73,7 @@ Partial Class Login
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(271, 22)
         Me.txtUsername.TabIndex = 3
+        Me.txtUsername.Tag = ""
         Me.txtUsername.Text = "Masukan Username"
         '
         'txtPassword
@@ -85,6 +86,7 @@ Partial Class Login
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(271, 22)
         Me.txtPassword.TabIndex = 5
+        Me.txtPassword.Tag = ""
         Me.txtPassword.Text = "Masukan Password"
         '
         'Label3
@@ -126,6 +128,19 @@ Partial Class Login
         Me.Panel1.Size = New System.Drawing.Size(309, 130)
         Me.Panel1.TabIndex = 8
         '
+        'IconPictureBox1
+        '
+        Me.IconPictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.IconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserAlt
+        Me.IconPictureBox1.IconColor = System.Drawing.Color.White
+        Me.IconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconPictureBox1.IconSize = 50
+        Me.IconPictureBox1.Location = New System.Drawing.Point(132, 15)
+        Me.IconPictureBox1.Name = "IconPictureBox1"
+        Me.IconPictureBox1.Size = New System.Drawing.Size(50, 50)
+        Me.IconPictureBox1.TabIndex = 2
+        Me.IconPictureBox1.TabStop = False
+        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -146,19 +161,6 @@ Partial Class Login
         Me.Label1.Size = New System.Drawing.Size(70, 25)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Login"
-        '
-        'IconPictureBox1
-        '
-        Me.IconPictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.IconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserAlt
-        Me.IconPictureBox1.IconColor = System.Drawing.Color.White
-        Me.IconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconPictureBox1.IconSize = 50
-        Me.IconPictureBox1.Location = New System.Drawing.Point(132, 15)
-        Me.IconPictureBox1.Name = "IconPictureBox1"
-        Me.IconPictureBox1.Size = New System.Drawing.Size(50, 50)
-        Me.IconPictureBox1.TabIndex = 2
-        Me.IconPictureBox1.TabStop = False
         '
         'Login
         '
